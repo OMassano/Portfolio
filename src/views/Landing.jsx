@@ -5,7 +5,7 @@ const Landing = () => {
     //fills screen
     <section className="min-h-screen flex flex-col justify-center  items-center p-5 text-center">
       <h3 className="text-4xl ">Oceana Massano</h3>
-      <h2 className="text-5xl py-5 font-bold dark:text-violet-300 text-violet-500">
+      <h2 className="text-5xl py-5 font-bold dark:text-violet-300 text-violet-500 font-russo-one">
         Full-Stack Developer
       </h2>
 

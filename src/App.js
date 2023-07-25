@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={darkMode && "dark"}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="bg-white dark:bg-darkBG text-darkBG dark:text-white cursor-default ">
+      <main className="bg-white dark:bg-darkBG text-darkBG dark:text-white cursor-default">
         <Landing />
         <About />
       </main>
