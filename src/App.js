@@ -1,7 +1,7 @@
-import Landing from "./views/Landing";
+import Landing from "./views/Landing/Landing";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
-import About from "./views/About";
+import About from "./views/About/About";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
