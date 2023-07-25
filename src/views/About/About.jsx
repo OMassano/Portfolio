@@ -1,5 +1,6 @@
 import React from "react";
 import technologies from "./technologyStack";
+import { BsDot } from "react-icons/bs";
 const About = () => {
   return (
     <section className="min-h-screen flex flex-col justify-start items-center">
@@ -33,13 +34,18 @@ const About = () => {
         </p>
         <p>Below are the technologies I am currently working with!</p>
       </div>
-      <div className="mt-4 text-center">
-        <h3 className="text-2xl dark:text-violet-300 text-violet-500">
+      <div className="mt-4 ">
+        <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
           Technologies
         </h3>
-        <div className="grid grid-flow-col auto-cols-max gap-6 py-6">
+        <div className="grid grid-cols-6 gap-6 py-6 font-light">
           {technologies.map((technology) => {
-            return <div>{technology.name}</div>;
+            return (
+              <div className="flex flex-row items-center">
+                <BsDot className="dark:text-violet-300 text-violet-500" />
+                {technology.name}
+              </div>
+            );
           })}
         </div>
       </div>
