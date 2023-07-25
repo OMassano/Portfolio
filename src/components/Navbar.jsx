@@ -4,7 +4,7 @@ import { TbHexagonLetterO } from "react-icons/tb";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
-    <header className="bg-white dark:bg-darkBG text-gray-900 dark:text-white">
+    <header className="bg-white dark:bg-darkBG text-darkBG dark:text-white">
       <nav className="flex justify-between items-center p-5">
         <TbHexagonLetterO className="text-5xl" />
         <div onClick={() => setDarkMode(!darkMode)}>
