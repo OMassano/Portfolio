@@ -1,14 +1,14 @@
-import Landing from "./views/Landing";
+import Landing from "./views/Landing/Landing";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
-import About from "./views/About";
+import About from "./views/About/About";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode && "dark"}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="bg-white dark:bg-darkBG text-darkBG dark:text-white cursor-default ">
+      <main className="bg-white dark:bg-darkBG text-darkBG dark:text-white cursor-default">
         <Landing />
         <About />
       </main>
