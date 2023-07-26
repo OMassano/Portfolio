@@ -1,5 +1,5 @@
 import React from "react";
-import technologies from "./technologyStack";
+import technologies from "../../data/technologyStack";
 import { BsDot } from "react-icons/bs";
 const About = () => {
   return (
@@ -38,7 +38,7 @@ const About = () => {
         <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
           Technologies
         </h3>
-        <div className="grid grid-cols-6 gap-6 py-6 font-light">
+        <div className="grid grid-cols-6 relative gap-6 py-6 font-light">
           {technologies.map((technology) => {
             return (
               <div className="flex flex-row items-center">
