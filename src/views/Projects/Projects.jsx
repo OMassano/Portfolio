@@ -17,12 +17,32 @@
 
 // export default Projects;
 
-import React from 'react'
+import React from "react";
 
 const Projects = () => {
+  //md:h-screen only sets as height of screen on md+ devices, w-full sets parent container as full width of screen
   return (
-    <div>Projects</div>
-  )
-}
+    <section name="projects" className="w-full md:h-screen">
+      <div>
+        <div>
+          <h2>Projects</h2>
+          <p>Here are some of the projects I have completed so far:</p>
+        </div>
+        <div>
+          {/*Project cards*/}
+          <div>
+            <div>
+              <button>yt link</button>
+              <button>github link</button>
+              <h3>title of proj</h3>
+              <p>Description...</p>
+              <p>TECHNOLOGIES? on hover?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Projects
+export default Projects;

@@ -3,7 +3,7 @@ import technologies from "../../data/technologyStack";
 import { BsDot } from "react-icons/bs";
 const About = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center px-5">
+    <section name="about" className="md:h-screen flex flex-col justify-start items-center px-5">
       <h2 className="text-4xl font-bold py-5 dark:text-violet-300 text-violet-500 text-center">
         About
       </h2>
