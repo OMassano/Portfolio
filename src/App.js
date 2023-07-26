@@ -14,8 +14,8 @@ function App() {
         <Landing />
         <About />
         <Projects />
+        <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
       </main>
-      <Footer darkMode={darkMode} setDarkMode={setDarkMode}/>
     </div>
   );
 }

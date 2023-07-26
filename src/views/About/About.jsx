@@ -3,8 +3,8 @@ import technologies from "../../data/technologyStack";
 import { BsDot } from "react-icons/bs";
 const About = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center">
-      <h2 className="text-4xl font-bold py-5 dark:text-violet-300 text-violet-500 text-center ">
+    <section className="min-h-screen flex flex-col justify-start items-center px-5">
+      <h2 className="text-4xl font-bold py-5 dark:text-violet-300 text-violet-500 text-center">
         About
       </h2>
       <div>
@@ -38,7 +38,7 @@ const About = () => {
         <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
           Technologies
         </h3>
-        <div className="grid grid-cols-6 relative gap-6 py-6 font-light">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 py-6 font-light">
           {technologies.map((technology) => {
             return (
               <div className="flex flex-row items-center">

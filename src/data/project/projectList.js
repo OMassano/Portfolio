@@ -1,3 +1,4 @@
+import DogsImage from "./images/Dogs-project.png"
 const projectsList = [
   {
     id: 1,
@@ -13,6 +14,7 @@ const projectsList = [
       { id: "english", desc: "" },
       { id: "spanish", desc: "" },
     ],
+    image:DogsImage
   },
   {
     id: 2,

@@ -27,11 +27,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           {menu ? <CgCloseR /> : <BiMenu />}
         </div>
         {menu && (
-          <ul className="flex flex-col justify-center top-0 items-center absolute w-full h-screen text-gray-700 dark:text-white">
+          <ul className=" sm:hidden flex flex-col justify-center top-0 items-center dark:bg-darkNav bg-white absolute w-full h-screen text-gray-700 dark:text-white z-5">
             {linksNavbar.map((link) => (
               <li
                 key={link.id}
-                className="px-3 cursor-pointer font-light py-3  hover:text-violet-500 dark:hover:text-violet-300 duration-100"
+                className="px-3 cursor-pointer border-b-3 font-semibold hover:scale-110 m-2  hover:text-violet-500 dark:hover:text-violet-300 duration-100"
               >
                 {link.name}
               </li>
