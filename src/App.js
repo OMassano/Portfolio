@@ -8,7 +8,8 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode && "dark"}>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      {/* <Navbar darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+      <Navbar/>
       <main className="bg-white dark:bg-darkBG text-darkBG dark:text-white cursor-default">
         <Landing />
         <About />
