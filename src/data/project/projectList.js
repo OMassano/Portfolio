@@ -5,9 +5,8 @@ const projectsList = [
     links: [
       {
         name: "github",
-        link: "https://github.com/OMassano/Individual-Project",
+        url: "https://github.com/OMassano/Individual-Project",
       },
-      { name: "youtube", link: "" },
     ],
     descriptions: [
       {
@@ -31,9 +30,9 @@ const projectsList = [
     links: [
       {
         name: "github",
-        link: "https://github.com/stars/OMassano/lists/football-central-app",
+        url: "https://github.com/stars/OMassano/lists/football-central-app",
       },
-      { name: "youtube", link: "https://www.youtube.com/watch?v=QOisVx6Y5Ic" },
+      { name: "youtube", url: "https://www.youtube.com/watch?v=QOisVx6Y5Ic" },
     ],
     descriptions: [
       {
@@ -57,9 +56,8 @@ const projectsList = [
     links: [
       {
         name: "github",
-        link: "https://github.com/OMassano/Portfolio",
+        url: "https://github.com/OMassano/Portfolio",
       },
-      { name: "youtube", link: "" },
     ],
     descriptions: [
       {
@@ -78,6 +76,5 @@ const projects = projectsList.sort((a, b) => {
   if (a.id > b.id) return -1;
   return 0;
 });
-console.log(projects[0].links[0].link);
 
 export default projects;
