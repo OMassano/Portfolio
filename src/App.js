@@ -4,6 +4,7 @@ import { useState } from "react";
 import About from "./views/About/About";
 import Projects from "./views/Projects/Projects";
 import Footer from "./components/Footer";
+import Contact from "./views/Contact/Contact";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,6 +15,7 @@ function App() {
         <Landing />
         <About />
         <Projects />
+        <Contact />
         <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
       </main>
     </div>
