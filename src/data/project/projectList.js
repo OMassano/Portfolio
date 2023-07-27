@@ -1,5 +1,3 @@
-import technologies from "../technologyStack";
-
 const projectsList = [
   {
     id: 1,
@@ -14,11 +12,18 @@ const projectsList = [
     descriptions: [
       {
         id: "english",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Dog encyclopedia, includes searchbar, filters, sorting options, forms that allow the user to add more dogs to the database and calls to an external API. Includes relationships between tables in database.",
       },
       { id: "spanish", desc: "" },
     ],
-    technologies:["ReactJs"]
+    technologies: [
+      "CSS",
+      "HTML",
+      "PostgreSQL",
+      "ReactJs",
+      "Redux",
+      "Sequelize",
+    ],
   },
   {
     id: 2,
@@ -33,11 +38,18 @@ const projectsList = [
     descriptions: [
       {
         id: "english",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Football App that includes authentication, searchbar, combined filters, sorting options, shopping cart, automatic mailing system, admin dashboard and more. Main tasks were creating endpoints, the database and incorporating Cloudinary and Nodemailer to both the front end and back end among others",
       },
       { id: "spanish", desc: "" },
     ],
-    technologies:["ReactJs"]
+    technologies: [
+      "Cloudinary",
+      "NodeJs",
+      "PostgreSQL",
+      "ReactJs",
+      "Redux",
+      "Sequelize",
+    ],
   },
   {
     id: 3,
@@ -52,11 +64,11 @@ const projectsList = [
     descriptions: [
       {
         id: "english",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Portfolio with landing page, about, projects and contact section. Ability to send notes to admin and download resume directly from site.",
       },
       { id: "spanish", desc: "" },
     ],
-    technologies:["ReactJs", "Tailwind CSS"]
+    technologies: ["ReactJs", "Redux", "Tailwind CSS"],
   },
 ];
 

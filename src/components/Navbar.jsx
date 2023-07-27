@@ -7,7 +7,7 @@ import linksNavbar from "../data/linksNavbar";
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [menu, setMenu] = useState(false);
   return (
-    <header className="drop-shadow-md bg-white dark:bg-darkBG text-violet-500 dark:text-violet-300 fixed w-full">
+    <header className="drop-shadow-md bg-white dark:bg-darkBG text-violet-500 dark:text-violet-300 fixed w-full z-10">
       <nav className="flex justify-between items-center p-5">
         <TbHexagonLetterO className="text-5xl" />
         <ul className="hidden sm:flex">

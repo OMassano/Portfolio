@@ -41,7 +41,7 @@ const About = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 py-5 font-light">
           { technologies && technologies.map((technology) => {
             return (
-              <div className="flex flex-row items-center">
+              <div key={technology.id} className="flex flex-row items-center">
                 <BsDot className="dark:text-violet-300 text-violet-500" />
                 {technology.name}
               </div>
