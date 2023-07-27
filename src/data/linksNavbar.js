@@ -1,7 +1,11 @@
+import About from "../views/About/About";
+import Contact from "../views/Contact/Contact";
+import Projects from "../views/Projects/Projects";
+
 const linksNavbar = [
-  { id: 1, name: "About" },
-  { id: 2, name: "Projects" },
-  { id: 4, name: "Contact" },
+  { id: "about", name: "About", href:<About/>},
+  { id: "projects", name: "Projects", href:<Projects/>},
+  { id: "contact", name: "Contact", href:<Contact/>},
 ];
 
 export default linksNavbar

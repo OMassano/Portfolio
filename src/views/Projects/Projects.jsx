@@ -13,7 +13,7 @@ const Projects = () => {
     }
   };
   return (
-    <section name="projects" className="w-full md:h-screen py-5">
+    <section id="projects" className="w-full md:h-screen py-5">
       <div className="mx-auto flex flex-col justify-start w-full h-full items-center">
         <div className="pb-5 px-5">
           <h2 className="text-4xl font-bold dark:text-violet-300 text-violet-500 text-center pb-5">

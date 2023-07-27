@@ -7,8 +7,8 @@ const Contact = () => {
 
     }
   return (
-    <div
-      name="Contact"
+    <section
+      id="contact"
       className="p-5 h-full flex flex-col justify-start items-center "
     >
       <h2 className="text-4xl font-bold pb-5 dark:text-violet-300 text-violet-500 text-center">
@@ -29,7 +29,14 @@ const Contact = () => {
             )
         })}
       </div>
-    </div>
+      <a
+        href="/OceanaMassano-CV-ENGLISH-Jul23.pdf"
+        download={true}
+        className="flex hover:scale-110 items-center justify-center mt-10 py-2 px-4 rounded-md dark:bg-violet-300 bg-violet-500 font-semibold dark:text-darkBG text-white shadow-md dark:shadow-inner dark:hover:bg-violet-200 hover:bg-violet-600 duration-150"
+      >
+        Download Resume
+      </a>
+    </section>
   );
 };
 
