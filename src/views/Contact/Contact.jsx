@@ -28,7 +28,7 @@ const Contact = () => {
                 onClick={() => {
                   handleClick(social.url);
                 }}
-                className="text-4xl cursor-pointer hover:scale-125 hover:dark:text-white hover:text-black dark:text-violet-300 text-violet-500"
+                className="text-4xl cursor-pointer hover:scale-125 hover:dark:text-violet-200 dark:text-violet-300 text-violet-500 hover:text-violet-600 duration-200"
               >
                 {social.icon}
               </div>
@@ -38,7 +38,7 @@ const Contact = () => {
       <a
         href="/OceanaMassano-CV-ENGLISH-Jul23.pdf"
         download={true}
-        className="flex hover:scale-110 items-center justify-center mt-10 py-2 px-4 rounded-md dark:bg-violet-300 bg-violet-500 font-semibold dark:text-darkBG text-white shadow-md dark:shadow-inner dark:hover:bg-violet-200 hover:bg-violet-600 duration-150"
+        className="flex hover:scale-110 items-center justify-center mt-10 py-2 px-4 rounded-md dark:bg-violet-300 bg-violet-500 font-semibold dark:text-darkBG text-white shadow-md dark:shadow-inner dark:hover:bg-violet-200 hover:bg-violet-600 duration-200"
       >
         Download Resume
       </a>

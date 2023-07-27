@@ -10,12 +10,17 @@ const Navbar = ({ scrollToSection }) => {
   return (
     <header className="drop-shadow-md bg-white dark:bg-darkBG text-violet-500 dark:text-violet-300 fixed w-full z-10">
       <nav className="flex justify-between items-center p-5">
-        <TbHexagonLetterO className="text-5xl" />
+        <TbHexagonLetterO
+          className="text-5xl cursor-pointer hover:scale-110 duration-200"
+          onClick={() => {
+            scrollToSection("landing");
+          }}
+        />
         <ul className="hidden sm:flex">
           {linksNavbar.map((link) => (
             <li
               key={link.id}
-              className="px-3 cursor-pointer font-light dark:text-white text-gray-700 hover:scale-110 duration-150"
+              className="px-3 cursor-pointer font-light dark:text-white text-gray-700 hover:scale-110 duration-200"
               onClick={() => {
                 scrollToSection(link.id);
               }}
@@ -35,7 +40,7 @@ const Navbar = ({ scrollToSection }) => {
             {linksNavbar.map((link) => (
               <li
                 key={link.id}
-                className="px-3 cursor-pointer border-b-3 font-semibold hover:scale-110 m-2  hover:text-violet-500 dark:hover:text-violet-300 duration-100"
+                className="px-3 cursor-pointer border-b-3 font-semibold hover:scale-110 m-2  hover:text-violet-500 dark:hover:text-violet-300 duration-200"
                 onClick={() => {
                   setMenu(false);
                   scrollToSection(link.id);

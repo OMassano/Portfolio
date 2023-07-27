@@ -47,7 +47,7 @@ const Projects = () => {
                   >
                     {youtubeLink && (
                       <button
-                        className="hover:scale-110 dark:hover:text-white hover:text-black duration-100"
+                        className="hover:scale-110 dark:hover:text-white hover:text-black duration-200"
                         onClick={() => handleClick(project.links, "youtube")}
                       >
                         <AiFillYoutube size={35} />
@@ -55,7 +55,7 @@ const Projects = () => {
                     )}
                     {githubLink && (
                       <button
-                        className="hover:scale-110 dark:hover:text-white hover:text-black duration-100"
+                        className="hover:scale-110 dark:hover:text-white hover:text-black duration-200"
                         onClick={() => handleClick(project.links, "github")}
                       >
                         <AiFillGithub size={35} />
