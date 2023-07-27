@@ -1,4 +1,5 @@
-import DogsImage from "./images/Dogs-project.png"
+import technologies from "../technologyStack";
+
 const projectsList = [
   {
     id: 1,
@@ -11,10 +12,13 @@ const projectsList = [
       { name: "youtube", link: "" },
     ],
     descriptions: [
-      { id: "english", desc: "" },
+      {
+        id: "english",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
       { id: "spanish", desc: "" },
     ],
-    image:DogsImage
+    technologies:["ReactJs"]
   },
   {
     id: 2,
@@ -27,9 +31,32 @@ const projectsList = [
       { name: "youtube", link: "https://www.youtube.com/watch?v=QOisVx6Y5Ic" },
     ],
     descriptions: [
-      { id: "english", desc: "" },
+      {
+        id: "english",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
       { id: "spanish", desc: "" },
     ],
+    technologies:["ReactJs"]
+  },
+  {
+    id: 3,
+    name: "Portfolio",
+    links: [
+      {
+        name: "github",
+        link: "https://github.com/OMassano/Portfolio",
+      },
+      { name: "youtube", link: "" },
+    ],
+    descriptions: [
+      {
+        id: "english",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      { id: "spanish", desc: "" },
+    ],
+    technologies:["ReactJs", "Tailwind CSS"]
   },
 ];
 
@@ -40,4 +67,5 @@ const projects = projectsList.sort((a, b) => {
   return 0;
 });
 console.log(projects[0].links[0].link);
+
 export default projects;
