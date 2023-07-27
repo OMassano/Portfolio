@@ -3,12 +3,12 @@ import technologies from "../../data/technologyStack";
 import { BsDot } from "react-icons/bs";
 const About = () => {
   return (
-    <section name="about" className="md:h-screen flex flex-col justify-start items-center px-5">
-      <h2 className="text-4xl font-bold py-5 dark:text-violet-300 text-violet-500 text-center">
+    <section name="about" className="md:h-screen flex flex-col justify-start items-center p-5">
+      <h2 className="text-4xl font-bold pb-5 dark:text-violet-300 text-violet-500 text-center">
         About
       </h2>
       <div>
-        <p className="mt-4 max-w-3xl py-2">
+        <p className=" max-w-3xl py-2">
           {" "}
           I am a{" "}
           <span className="dark:text-violet-300 text-violet-500">
@@ -34,11 +34,11 @@ const About = () => {
         </p>
         <p>Below are the technologies I am currently working with!</p>
       </div>
-      <div className="mt-4 ">
+      <div className="pt-5">
         <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
           Technologies
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 py-6 font-light">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 py-5 font-light">
           {technologies.map((technology) => {
             return (
               <div className="flex flex-row items-center">
