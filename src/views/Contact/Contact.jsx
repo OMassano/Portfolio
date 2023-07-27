@@ -2,10 +2,14 @@ import React from "react";
 import socialLinks from "../../data/socialLinks";
 
 const Contact = () => {
+    const handleClick = (url) =>{
+        window.open(url, "_blank");
+
+    }
   return (
     <div
       name="Contact"
-      className="p-5 md:h-screen flex flex-col justify-start items-center "
+      className="p-5 h-full flex flex-col justify-start items-center "
     >
       <h2 className="text-4xl font-bold pb-5 dark:text-violet-300 text-violet-500 text-center">
         Contact
@@ -19,7 +23,7 @@ const Contact = () => {
       <div className="grid grid-cols-3 gap-6 py-5">
         {socialLinks && socialLinks.map((social)=>{
             return(
-                <div key={social.id} className="text-4xl cursor-pointer hover:scale-125 hover:dark:text-white hover:text-black dark:text-violet-300 text-violet-500">
+                <div key={social.id} onClick={()=>{handleClick(social.url)}}className="text-4xl cursor-pointer hover:scale-125 hover:dark:text-white hover:text-black dark:text-violet-300 text-violet-500">
                     {social.icon}
                 </div>
             )
