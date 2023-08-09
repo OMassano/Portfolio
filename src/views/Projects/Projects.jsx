@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillYoutube, AiFillGithub } from "react-icons/ai";
-import projects from "../../data/project/projectList";
+import projects from "../../data/projectList";
 
 const Projects = () => {
   const handleClick = (links, site) => {
