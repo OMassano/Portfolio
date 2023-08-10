@@ -1,11 +1,13 @@
-// import { useContext } from "react";
-// import { LanguageContext } from "../context/context";
-// import { languages } from "../context/languages.js";
+import { useContext } from "react";
+import { LanguageContext } from "../context/langContext.js";
+import { languages } from "../context/languages.js";
 
-// const LangContent = ({ contentID }) => {
-//   const { language } = useContext(LanguageContext);
+export const LangContent = ({ contentID }) => {
+  const currentLanguage = useContext(LanguageContext);
+  console.log("Language:", currentLanguage);
+  console.log("ContentId:", contentID);
+  //   console.log("Full object:", languages);
+  console.log("Content:", languages[currentLanguage][contentID]);
 
-//   return languages[language][contentID];
-// };
-
-// export default LangContent;
+  return languages[currentLanguage][contentID];
+};
