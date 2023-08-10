@@ -10,7 +10,7 @@ const About = () => {
       className="md:h-screen flex flex-col justify-center items-center p-5"
     >
       <h2 className="text-4xl font-bold pb-5 dark:text-violet-300 text-violet-500 text-center">
-        {LangContent({ contentID: "aboutHeader" })}
+        <LangContent contentID="aboutHeader" />
       </h2>
       <div>
         <p className=" max-w-3xl py-2">
@@ -41,7 +41,7 @@ const About = () => {
       </div>
       <div className="pt-5">
         <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
-        {LangContent({ contentID: "technologiesHeader" })}
+          <LangContent contentID="technologiesHeader" />
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 py-5 font-light">
           {technologies &&

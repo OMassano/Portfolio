@@ -21,12 +21,13 @@ function App() {
 
   function toggleLanguage() {
     setCurrentLanguage((currentLanguage) =>
-      currentLanguage === "english" ? "arabic" : "english"
+      currentLanguage === "english" ? "spanish" : "english"
     );
   }
+  
   return (
     <>
-      <LanguageContext.Provider value={currentLanguage}>
+      <LanguageContext.Provider value={{ currentLanguage, toggleLanguage }}>
         <div className={darkMode && "dark"}>
           <Navbar scrollToSection={scrollToSection} />
           <main className="bg-white dark:bg-darkBG text-darkBG dark:text-white cursor-default">
