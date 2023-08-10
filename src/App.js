@@ -19,12 +19,12 @@ function App() {
     }
   };
 
-  function toggleLanguage() {
-    setCurrentLanguage((currentLanguage) =>
-      currentLanguage === "english" ? "spanish" : "english"
-    );
+  function toggleLanguage(lang) {
+    console.log("current", currentLanguage);
+    console.log("next", lang);
+    setCurrentLanguage(lang);
   }
-  
+
   return (
     <>
       <LanguageContext.Provider value={{ currentLanguage, toggleLanguage }}>
