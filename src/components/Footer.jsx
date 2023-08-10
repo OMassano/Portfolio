@@ -1,5 +1,6 @@
 import React from "react";
-// import LangButton from "./langButton";
+import LangButton from "./LangButton"
+
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 
 const Footer = ({ darkMode, setDarkMode }) => {
@@ -13,8 +14,7 @@ const Footer = ({ darkMode, setDarkMode }) => {
             <MdNightsStay className="text-3xl cursor-pointer" />
           )}
         </div>
-        {/* <LangButton /> */}
-        
+        <LangButton />
       </div>
     </footer>
   );
