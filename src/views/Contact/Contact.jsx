@@ -1,5 +1,6 @@
 import React from "react";
 import socialLinks from "../../data/socialLinks";
+import { LangContent } from "../../components/langContent";
 
 const Contact = () => {
   const handleClick = (url) => {
@@ -11,7 +12,7 @@ const Contact = () => {
       className="p-5 md:h-screen flex flex-col justify-center items-center "
     >
       <h2 className="text-4xl font-bold pb-5 dark:text-violet-300 text-violet-500 text-center">
-        Contact
+        <LangContent contentID="contactHeader"/>
       </h2>
       <p className="max-w-3xl py-2 text-center font-light">
         I am currently open to work; I look forward to any and all opportunities

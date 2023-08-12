@@ -7,7 +7,7 @@ export const languages = {
       "Hello, welcome to my portfolio! I am a Full-Stack Developer who is passionate about creating websites and expanding their knowledge!",
     aboutHeader: "About",
     aboutText:
-      "I am a Full-Stack Developer who is curious and committed to self-improvement. I was born in the United States but moved to Argentina five years ago, I acknowledge the opportunities being fully bilingual gives me, especially in the technological world. The dynamic nature of programming, with its constant evolution and innovation, captivates me as I love learning how things work. My dreams as a web developer are to make innovative websites, to not just tackle tasks and fix problems but to genuinely understand them in depth. Below are the technologies I am currently working with",
+      "I am a *span*Full-Stack Developer who is curious and committed to self-improvement. I was born in the *span*United States but moved to Argentina five years ago, I acknowledge the opportunities being fully *span*bilingual gives me, especially in the technological world. *p*The dynamic nature of programming, with its constant evolution and innovation, captivates me as I love learning how things work. My *span*dreams as a web developer are to make innovative websites, to not just tackle tasks and fix problems but to genuinely understand them in depth. *p*Below are the technologies I am currently working with!",
     technologiesHeader: "Technologies",
     contactHeader: "Contact",
     contactText:
