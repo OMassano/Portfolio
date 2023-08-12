@@ -16,7 +16,10 @@ const About = () => {
         <LangContent contentID="aboutHeader" />
       </h2>
       <div>
-        <p className=" max-w-3xl py-2">
+      {paragraphs.map((paragraph)=>{
+          return <p className="max-w-3xl py-2">{paragraph}</p>
+        })}
+        {/* <p className=" max-w-3xl py-2">
           {" "}
           I am a{" "}
           <span className="dark:text-violet-300 text-violet-500">
@@ -40,7 +43,7 @@ const About = () => {
           as a web developer are to make innovative websites, to not just tackle
           tasks and fix problems but to genuinely understand them in depth.
         </p>
-        <p>Below are the technologies I am currently working with!</p>
+        <p>Below are the technologies I am currently working with!</p> */}
       </div>
       <div className="pt-5">
         <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
