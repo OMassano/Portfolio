@@ -4,9 +4,9 @@ import { BsDot } from "react-icons/bs";
 import { LangContent } from "../../components/langContent";
 
 const About = () => {
-  const text = LangContent({contentID:"aboutText"})
-  const paragraphs = text.split("*p*")
-  console.log(paragraphs)
+  const text = LangContent({ contentID: "aboutText" });
+  const paragraphs = text.split("*p*");
+  console.log(paragraphs);
   return (
     <section
       id="about"
@@ -16,8 +16,9 @@ const About = () => {
         <LangContent contentID="aboutHeader" />
       </h2>
       <div>
-      {paragraphs.map((paragraph)=>{
-          return <p className="max-w-3xl py-2">{paragraph}</p>
+        {/*Add span logic*/}
+        {paragraphs.map((paragraph) => {
+          return <p className="max-w-3xl py-2">{paragraph}</p>;
         })}
         {/* <p className=" max-w-3xl py-2">
           {" "}
