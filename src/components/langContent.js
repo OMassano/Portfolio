@@ -7,19 +7,7 @@ export const LangContent = ({ contentID }) => {
   //   console.log("Language:", currentLanguage);
   //   console.log("ContentId:", contentID);
   //   //   console.log("Full object:", languages);
-    console.log("Content:", languages[currentLanguage][contentID]);
-
-  //   if (contentID === "aboutText") {
-  //     const content = languages[currentLanguage][contentID];
-  //     console.log("content",content)
-  //     const paragraphs = content.split("*p*")
-  //     // .map((paragraph) => {
-  //     //     {console.log("para", paragraph)}
-  //     //   <p className=" max-w-3xl py-2">{paragraph}</p>;
-  //     // });
-  //     console.log(paragraphs)
-  //     return paragraphs;
-  //   }
+  // console.log("Content:", languages[currentLanguage][contentID]);
 
   return languages[currentLanguage][contentID];
 };

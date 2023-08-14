@@ -6,7 +6,6 @@ import { LangContent } from "../../components/langContent";
 const About = () => {
   const text = LangContent({ contentID: "aboutText" });
   const paragraphs = text.split("*p*");
-  console.log(paragraphs);
   return (
     <section
       id="about"
@@ -16,37 +15,27 @@ const About = () => {
         <LangContent contentID="aboutHeader" />
       </h2>
       <div>
-        {/*Add span logic*/}
         {paragraphs.map((paragraph) => {
-          return <p className="max-w-3xl py-2">{paragraph}</p>;
+          const text = paragraph.split("*span*");
+          console.log(text);
+          let i = 0;
+          const styledParagraph = text.map((text) => {
+            if (i % 2 !== 0) {
+              i++;
+              return (
+                <span className="dark:text-violet-300 text-violet-500" key={i}>
+                  {text}
+                </span>
+              );
+            } else {
+              i++;
+              return <span key={i}>{text}</span>;
+            }
+          });
+          return <p className="max-w-3xl py-2">{styledParagraph}</p>;
         })}
-        {/* <p className=" max-w-3xl py-2">
-          {" "}
-          I am a{" "}
-          <span className="dark:text-violet-300 text-violet-500">
-            Full-Stack Developer
-          </span>{" "}
-          who is curious and committed to self-improvement. I was born in the{" "}
-          <span className="dark:text-violet-300 text-violet-500">
-            United States
-          </span>{" "}
-          but moved to Argentina five years ago, I acknowledge the opportunities
-          being fully{" "}
-          <span className="dark:text-violet-300 text-violet-500">
-            bilingual
-          </span>{" "}
-          gives me, especially in the technological world.
-        </p>
-        <p className="max-w-3xl py-2">
-          The dynamic nature of programming, with its constant evolution and
-          innovation, captivates me as I love learning how things work. My{" "}
-          <span className="dark:text-violet-300 text-violet-500">dreams</span>{" "}
-          as a web developer are to make innovative websites, to not just tackle
-          tasks and fix problems but to genuinely understand them in depth.
-        </p>
-        <p>Below are the technologies I am currently working with!</p> */}
       </div>
-      <div className="pt-5">
+      <div className="pt-3">
         <h3 className="text-2xl dark:text-violet-300 text-violet-500 text-center justify-center">
           <LangContent contentID="technologiesHeader" />
         </h3>
