@@ -7,7 +7,7 @@ export const LangContent = ({ contentID }) => {
   //   console.log("Language:", currentLanguage);
   //   console.log("ContentId:", contentID);
   //   //   console.log("Full object:", languages);
-  // console.log("Content:", languages[currentLanguage][contentID]);
+  //   console.log("Content:", languages[currentLanguage][contentID]);
 
   return languages[currentLanguage][contentID];
 };

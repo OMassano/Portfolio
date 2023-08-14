@@ -4,6 +4,7 @@ import { BiMenu } from "react-icons/bi";
 import { CgCloseR } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import linksNavbar from "../data/linksNavbar";
+import { LangContent } from "./langContent";
 
 const Navbar = ({ scrollToSection }) => {
   const [menu, setMenu] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = ({ scrollToSection }) => {
                 scrollToSection(link.id);
               }}
             >
-              <Link to={link.href}>{link.name}</Link>
+              <Link to={link.href}><LangContent contentID={link.id}/></Link>
             </li>
           ))}
         </ul>
