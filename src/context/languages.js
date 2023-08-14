@@ -11,7 +11,7 @@ export const languages = {
     technologiesHeader: "Technologies",
     contactHeader: "Contact",
     contactText:
-      " I am currently open to work; I look forward to any and all opportunities that come my way! Feel free to contact me through any of my social networks linked below!",
+      " I am currently open to work; I look forward to any and all opportunities that come my way! Feel free to *span*contact me*span* through any of my social networks linked below!",
     projectHeader: "Projects",
     projectText: "Here are some of the projects I have completed so far:",
     projectDog:
@@ -33,7 +33,7 @@ export const languages = {
     technologiesHeader: "Tecnologías",
     contactHeader: "Contacto",
     contactText:
-      "Actualmente estoy en busqueda activa de trabajo; ¡espero con interés todas las oportunidades que se presenten en mi camino! No dudes en contactarme a través de mis redes sociales vinculadas a continuación.",
+      "Actualmente estoy en busqueda activa de trabajo; ¡espero con interés todas las oportunidades que se presenten en mi camino! No dudes en *span*contactarme*span* a través de mis redes sociales vinculadas a continuación.",
     projectHeader: "Proyectos",
     projectText: "Algunos de los proyectos que he completado hasta ahora:",
     projectDog:

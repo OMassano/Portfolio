@@ -4,8 +4,12 @@ import { BsDot } from "react-icons/bs";
 import { LangContent } from "../../components/langContent";
 
 const About = () => {
-  const text = LangContent({ contentID: "aboutText" });
-  const paragraphs = text.split("*p*");
+  let content = LangContent({ contentID: "aboutText" });
+  let paragraphs;
+  content.includes("*p*")
+    ? (paragraphs = content.split("*p*"))
+    : (paragraphs = [content]);
+    
   return (
     <section
       id="about"
@@ -16,23 +20,39 @@ const About = () => {
       </h2>
       <div>
         {paragraphs.map((paragraph) => {
-          const text = paragraph.split("*span*");
-          console.log(text);
-          let i = 0;
-          const styledParagraph = text.map((text) => {
-            if (i % 2 !== 0) {
-              i++;
-              return (
-                <span className="dark:text-violet-300 text-violet-500" key={i}>
-                  {text}
-                </span>
-              );
-            } else {
-              i++;
-              return <span key={i}>{text}</span>;
-            }
-          });
-          return <p className="max-w-3xl py-2">{styledParagraph}</p>;
+          if (paragraph.includes("*span*")) {
+            let text = paragraph.split("*span*");
+            let i = 0;
+            const styledParagraph = text.map((text) => {
+              if (i % 2 !== 0) {
+                i++;
+                return (
+                  <span
+                    className="dark:text-violet-300 text-violet-500"
+                    key={i}
+                  >
+                    {text}
+                  </span>
+                );
+              } else {
+                i++;
+                return <span key={i}>{text}</span>;
+              }
+            });
+            // console.log("array", styledParagraph)
+            return (
+              <p className="max-w-3xl py-2" key={styledParagraph}>
+                {styledParagraph}
+              </p>
+            );
+          } else {
+            // console.log("normal", paragraph)
+            return (
+              <p className="max-w-3xl py-2" key={paragraph}>
+                {paragraph}
+              </p>
+            );
+          }
         })}
       </div>
       <div className="pt-3">

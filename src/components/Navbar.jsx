@@ -26,7 +26,9 @@ const Navbar = ({ scrollToSection }) => {
                 scrollToSection(link.id);
               }}
             >
-              <Link to={link.href}><LangContent contentID={link.name}/></Link>
+              <Link to={link.href}>
+                <LangContent contentID={link.name} />
+              </Link>
             </li>
           ))}
         </ul>
@@ -47,7 +49,7 @@ const Navbar = ({ scrollToSection }) => {
                   scrollToSection(link.id);
                 }}
               >
-                {link.name}
+                <LangContent contentID={link.name} />
               </li>
             ))}
           </ul>
