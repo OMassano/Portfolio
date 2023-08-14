@@ -26,7 +26,7 @@ const Navbar = ({ scrollToSection }) => {
                 scrollToSection(link.id);
               }}
             >
-              <Link to={link.href}><LangContent contentID={link.id}/></Link>
+              <Link to={link.href}><LangContent contentID={link.name}/></Link>
             </li>
           ))}
         </ul>

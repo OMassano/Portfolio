@@ -3,12 +3,12 @@ import Contact from "../views/Contact/Contact";
 import Projects from "../views/Projects/Projects";
 const linksNavbar = [
   {
-    id: "aboutHeader",
-    name: "about",
+    id: "about",
+    name: "aboutHeader",
     href: <About />,
   },
-  { id: "projectHeader", name: "Projects", href: <Projects /> },
-  { id: "contactHeader", name: "Contact", href: <Contact /> },
+  { id: "projects", name: "projectHeader", href: <Projects /> },
+  { id: "contact", name: "contactHeader", href: <Contact /> },
 ];
 
 export default linksNavbar;
