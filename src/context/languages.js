@@ -14,6 +14,12 @@ export const languages = {
       " I am currently open to work; I look forward to any and all opportunities that come my way! Feel free to contact me through any of my social networks linked below!",
     projectHeader: "Projects",
     projectText: "Here are some of the projects I have completed so far:",
+    projectDog:
+      "Dog encyclopedia, includes searchbar, filters, sorting options, forms that allow the user to add more dogs to the database and calls to an external API. Includes relationships between tables in database.",
+    projectFootball:
+      "Football App that includes authentication, searchbar, combined filters, sorting options, shopping cart, automatic mailing system, admin dashboard and more. Main tasks were creating endpoints, the database and incorporating Cloudinary and Nodemailer to both the front end and back end among others",
+    projectPortfolio:
+      "Small portfolio app with landing page, about, projects and contact section.",
   },
   spanish: {
     resume: "Descargar Currículum",
@@ -30,5 +36,11 @@ export const languages = {
       "Actualmente estoy en busqueda activa de trabajo; ¡espero con interés todas las oportunidades que se presenten en mi camino! No dudes en contactarme a través de mis redes sociales vinculadas a continuación.",
     projectHeader: "Proyectos",
     projectText: "Algunos de los proyectos que he completado hasta ahora:",
+    projectDog:
+      "Enciclopedia de Perros, incluye barra de búsqueda, filtros, opciones de ordenamiento, formularios que permiten al usuario agregar más perros a la base de datos y llamadas a una API externa. Incluye relaciones entre tablas en la base de datos.",
+    projectFootball:
+      "Aplicación de Fútbol que incluye autenticación, barra de búsqueda, filtros combinados, opciones de ordenamiento, carrito de compras, sistema de correo automático, panel de administración y más. Las principales tareas incluyeron la creación endpoints, la base de datos e la incorporación de Cloudinary y Nodemailer tanto en el frontend como en el backend, entre otras cosas.",
+    projectPortfolio:
+      "Portafolio con página de inicio, sección Acerca de mí, proyectos y sección de contacto.",
   },
 };
