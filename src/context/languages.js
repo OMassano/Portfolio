@@ -23,7 +23,7 @@ export const languages = {
       "¡Hola, bienvenidos a mi portafolio! Soy una Desarrolladora Full-Stack apasionada por crear sitios web y expandir mis conocimientos.",
     aboutHeader: "Acerca de mí",
     aboutText:
-      "Soy una Desarrolladora Full-Stack con curiosidad y compromiso hacia la mejora personal. Nací en los Estados Unidos, pero me mudé a Argentina hace cinco años; reconozco las oportunidades que me brinda ser completamente bilingüe, especialmente en el mundo tecnológico. La naturaleza dinámica de la programación, con su constante evolución e innovación, me cautiva, ya que disfruto aprender cómo funcionan las cosas. Mis sueños como desarrolladora web son crear sitios innovadores, no solo abordar tareas y solucionar problemas, sino entenderlos realmente en profundidad. A continuación, se presentan las tecnologías con las que estoy trabajando actualmente.",
+      "Soy una *span*Desarrolladora Full-Stack*span* con curiosidad y compromiso hacia la mejora personal. Nací en los *span*Estados Unidos*span*, pero me mudé a Argentina hace cinco años; reconozco las oportunidades que me brinda ser *span*bilingüe*span*, especialmente en el mundo tecnológico. *p*La naturaleza dinámica de la programación, con su constante evolución e innovación, me cautiva, ya que disfruto aprender cómo funcionan las cosas. Mis *span*sueños*span* como desarrolladora web son crear sitios innovadores, no solo abordar tareas y solucionar problemas, sino entenderlos en profundidad. *p*A continuación, se presentan las tecnologías con las que estoy trabajando actualmente.",
     technologiesHeader: "Tecnologías",
     contactHeader: "Contacto",
     contactText:
