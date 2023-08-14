@@ -12,7 +12,7 @@ const LangButton = () => {
       <p
         className={`flex items-center px-3 py-1 border-r dark:border-violet-300 border-violet-500 cursor-pointer${
           isEnglish
-            ? "dark:bg-violet-300 dark:text-darkBG bg-violet-500 text-white"
+            ? " dark:bg-violet-300 dark:text-darkBG bg-violet-500 text-white"
             : ""
         }`}
         onClick={() => toggleLanguage("english")}
@@ -22,7 +22,7 @@ const LangButton = () => {
       <p
         className={`flex items-center px-3 py-1 border-l dark:border-violet-300 border-violet-500 cursor-pointer ${
           isSpanish
-            ? "dark:bg-violet-300 dark:text-darkBG bg-violet-500 text-white"
+            ? " dark:bg-violet-300 dark:text-darkBG bg-violet-500 text-white"
             : ""
         }`}
         onClick={() => toggleLanguage("spanish")}
