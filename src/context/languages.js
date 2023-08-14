@@ -1,6 +1,6 @@
 export const languages = {
   english: {
-    download: "Download Resume",
+    resume: "Download Resume",
     name: "Oceana Massano",
     title: "Full-Stack Developer",
     intro:
@@ -16,7 +16,7 @@ export const languages = {
     projectText: "Here are some of the projects I have completed so far:",
   },
   spanish: {
-    download: "Descargar Currículum",
+    resume: "Descargar Currículum",
     name: "Oceana Massano",
     title: "Desarrolladora Full-Stack",
     intro:
