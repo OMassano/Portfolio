@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillYoutube, AiFillGithub } from "react-icons/ai";
 import projects from "../../data/projectList";
+import { LangContent } from "../../components/langContent";
 
 const Projects = () => {
   const handleClick = (links, site) => {
@@ -17,10 +18,10 @@ const Projects = () => {
       <div className="mx-auto flex flex-col justify-center w-full h-full items-center">
         <div className="pb-5 px-5">
           <h2 className="text-4xl font-bold dark:text-violet-300 text-violet-500 text-center pb-5">
-            Projects
+            <LangContent contentID="projectHeader" />
           </h2>
           <p className="pb-2 font-light">
-            Here are some of the projects I have completed so far:
+            <LangContent contentID="projectText"/>
           </p>
         </div>
 
@@ -66,7 +67,7 @@ const Projects = () => {
                     {project.name}
                   </h3>
                   <p className="flex-grow pb-2">
-                    {project.descriptions[0].desc}
+                   <LangContent contentID={project.id}/>
                   </p>
                   {/* Container for technologies */}
                   <div className="font-russo-one text-gray-400 flex flex-wrap items-end">
