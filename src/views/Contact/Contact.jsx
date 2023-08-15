@@ -76,7 +76,7 @@ const Contact = () => {
           })}
       </div>
         <a
-          href={`/OceanaMassano-CV-${currentLanguage}-Jul23.pdf`}
+          href={`/OceanaMassano-${currentLanguage}-Jul23.pdf`}
           download={true}
           className="flex hover:scale-110 items-center justify-center mt-10 py-2 px-4 rounded-md dark:bg-violet-300 bg-violet-500 font-semibold dark:text-darkBG text-white shadow-md dark:shadow-inner dark:hover:bg-violet-200 hover:bg-violet-600 duration-200"
         >
