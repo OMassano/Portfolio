@@ -21,7 +21,7 @@ const Navbar = ({ scrollToSection }) => {
           {linksNavbar.map((link) => (
             <li
               key={link.id}
-              className="px-3 cursor-pointer font-light dark:text-white text-gray-700 hover:scale-110 duration-200"
+              className="px-3 cursor-pointer dark:text-white text-gray-700 hover:scale-110 duration-200"
               onClick={() => {
                 scrollToSection(link.id);
               }}
