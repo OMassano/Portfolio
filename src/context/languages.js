@@ -15,7 +15,7 @@ export const languages = {
     projectHeader: "Projects",
     projectText: "Here are some of the projects I have completed so far:",
     projectDog:
-      "Dog encyclopedia, includes searchbar, filters, sorting options, forms that allow the user to add more dogs to the database and calls to an external API. Includes relationships between tables in database.",
+      "Dog encyclopedia, includes searchbar, filters, sorting options, forms that allow the user to add dogs to the database and calls to an external API. Includes relationships between tables in database.",
     projectFootball:
       "Football App that includes authentication, searchbar, combined filters, sorting options, shopping cart, automatic mailing system, admin dashboard and more. Main tasks were creating endpoints, the database and incorporating Cloudinary and Nodemailer to both the front end and back end among others",
     projectPortfolio:

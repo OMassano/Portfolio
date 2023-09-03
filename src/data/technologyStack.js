@@ -17,6 +17,7 @@ const technologyStack = [
   { id: 16, name: "Python" },
   { id: 17, name: "Insomnia" },
   { id: 18, name: "Tailwind" },
+  {id:19, name:"Typescript"}
 ];
 
 const technologies = technologyStack.sort((a, b) => {
